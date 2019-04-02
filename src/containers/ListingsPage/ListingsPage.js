@@ -4,6 +4,7 @@ import * as selectors from '../../store/selectors';
 import * as actions from '../../store/actions/listings';
 
 import './ListingsPage.css'
+import Listing from '../../componenets/Listing/Listing';
 
 class ListingsPage extends Component {
 
@@ -13,12 +14,11 @@ class ListingsPage extends Component {
 
     render() {
         let listings = this.props.listings.map((listing) => {
-            return <h1 key={listing.id}>{listing.title}</h1> 
+            return <Listing key={listing.id} {...listing} /> 
         });
 
         return (
             <div className="listings-page">
-                <h1>ListingsPage</h1>
                 {listings}
             </div>
         );
