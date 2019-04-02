@@ -4,7 +4,7 @@ import * as selectors from '../../store/selectors';
 import * as actions from '../../store/actions/listings';
 
 import './ListingsPage.css'
-import Listing from '../../componenets/Listing/Listing';
+import Listing from '../../components/Listing/Listing';
 
 class ListingsPage extends Component {
 

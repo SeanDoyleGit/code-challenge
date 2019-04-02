@@ -1,0 +1,30 @@
+.listing-detail__wrapper {
+    display: inline-block;
+    width: 560px;
+    margin: 0 0 0 auto;
+}
+
+.listing-detail__title {
+    font-size: 64px;
+    margin-top: 60px; 
+}
+
+.listing-detail__question__number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.listing-detail__question__text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+    color: #333333;
+}
+
+.listing-detail__image-wrapper {
+    width: 50%;
+}
+
+.listing-detail__thumbnail {
+    display: none;
+}
