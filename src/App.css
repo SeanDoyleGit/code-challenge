@@ -1,0 +1,8 @@
+.app {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px 90px 60px 90px;
+    max-width: 1582px;
+    text-align: left;
+    margin: auto;
+}

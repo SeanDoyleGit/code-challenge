@@ -1,0 +1,26 @@
+.menu {
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+
+.menu__item, .menu__link-wrapper {
+    list-style: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.menu__link-wrapper::last-child {
+    padding-right: 0;
+}
+
+.menu__item__link, .menu__link {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.menu__link:hover, .menu__item__link:hover { 
+    text-decoration: underline;
+}
