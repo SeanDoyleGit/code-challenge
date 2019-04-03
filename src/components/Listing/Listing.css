@@ -1,5 +1,7 @@
 .listing {
     width: 50%;
+    min-width: 500px;
+    max-width: 100%;
     box-sizing: border-box;
     padding-bottom: 60px;
 }
@@ -16,7 +18,7 @@
     font-size: 24px;
     color: #1A1A1A;
     font-weight: 500;
-    padding-right: 200px;
+    padding-right: 25%;
 }
 
 .listing__image-wrapper {
@@ -59,4 +61,32 @@
     margin-right: 15px;
     vertical-align: middle;
     background-color: #3952f7;
+}
+
+@media only screen and (max-width: 1200px) {
+    .listing {
+        width: 100%;
+        min-width: 0;
+    }
+    .listing:nth-child(2n) {
+        padding-left: 0;
+    }
+    .listing:nth-child(2n - 1) {
+        padding-right: 0;
+    }
+
+    .listing__image {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .listings-page {
+        display: block;
+    }
+
+    .listing__title {
+        font-size: 18px;
+        padding-right: 5%;
+    }
 }

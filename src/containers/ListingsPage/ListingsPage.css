@@ -7,3 +7,10 @@
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 620px) {
+    .listings-page {
+        display: block;
+        padding-top: 20px;
+    }
+}

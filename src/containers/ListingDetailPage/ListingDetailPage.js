@@ -16,7 +16,7 @@ class ListingDetailPage extends Component {
         if(!this.props.listing) {
             return ( 
                 <div className="listing-detail">
-                    <h3 style={{color: 'red', textAlign: 'center' }}>Error listing with the id {this.props.match.params.id} not found.</h3>
+                    <h3 style={{color: 'red', textAlign: 'center', fontWeight: 400 }}>Sorry listing {this.props.match.params.id} was not found.</h3>
                 </div>
             );
         } else {
