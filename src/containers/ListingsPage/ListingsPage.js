@@ -15,7 +15,7 @@ class ListingsPage extends Component {
 
     render() {
         let listings = this.props.listings.map((listing, index) => {
-            return <Listing  transitionDelay={1000 + index * 500} key={listing.id} {...listing} /> 
+            return <Listing  transitionDelay={1000 + index * 300} key={listing.id} {...listing} /> 
         });
 
         return (

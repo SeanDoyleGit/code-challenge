@@ -7,7 +7,7 @@ import Tag from '../Listing/Tag';
 const listingDetail = ({ tag, title, image, thumb, questions }) => {
     
     let questionsSection = questions.map((question, index) => (
-        <div className="listing-detail__question" key={index}>
+        <div className="listing-detail__question" key={index} style={{ transitionDelay: `${(index / 10) + 0.2}s` }}>
             <h2 className="listing-detail__question__number">Question {index + 1}</h2>
             <p className="listing-detail__question__text">{question}</p>
         </div>
