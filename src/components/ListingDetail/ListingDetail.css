@@ -93,6 +93,12 @@
     .listing-detail__question__text {
         font-size: 16px;
     }
+
+    .listing-detail {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 550px) {

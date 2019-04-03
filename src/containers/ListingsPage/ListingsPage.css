@@ -13,13 +13,12 @@
     display: none;
 }
 
-.listings-page.fade-enter-active {
-    
-}
-
 @media only screen and (max-width: 620px) {
     .listings-page.fade-enter-done {
         display: block;
+    }
+
+    .listings-page {
         padding-top: 20px;
     }
 }

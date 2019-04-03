@@ -14,7 +14,7 @@ const listing = ({ transitionDelay, id, title_long, tag, thumb }) => (
                     <img className="listing__thumbnail" alt={thumb} src={require(`../../assets/${thumb}`)}/>
                 </div>
                 <h2 className="listing__title">{title_long}</h2>
-                <MenuItem classes="listing__link" link={`ListingDetail/${id}`}>VIEW CASE STUDY</MenuItem>
+                <MenuItem classes="listing__link" link={`/ListingDetail/${id}`} exact>VIEW CASE STUDY</MenuItem>
             </div>
         )}
     </Transition>
