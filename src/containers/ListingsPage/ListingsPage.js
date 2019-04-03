@@ -7,7 +7,7 @@ import * as actions from '../../store/actions/listings';
 import './ListingsPage.css'
 import Listing from '../../components/Listing/Listing';
 
-class ListingsPage extends Component {
+export class ListingsPage extends Component {
 
     componentDidMount() {
         this.props.fetchListings();
@@ -15,7 +15,7 @@ class ListingsPage extends Component {
 
     render() {
         let listings = this.props.listings.map((listing, index) => {
-            return <Listing  transitionDelay={1000 + index * 300} key={listing.id} {...listing} /> 
+            return <Listing transitionDelay={1000 + index * 300} key={listing.id} {...listing} /> 
         });
 
         return (

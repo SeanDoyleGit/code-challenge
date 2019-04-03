@@ -6,17 +6,19 @@ import * as selectors from '../../store/selectors';
 import './ListingDetailPage.css';
 import ListingDetail from '../../components/ListingDetail/ListingDetail';
 
-class ListingDetailPage extends Component {
+export class ListingDetailPage extends Component {
 
     componentDidMount() {
         this.props.fetchListings();
     }
 
     render() {
-        let content = ( <ListingDetail {...this.props.listing}></ListingDetail> );
+        let content;
         if(!this.props.listing) {
-            content = ( <h3 style={{color: 'red', textAlign: 'center', fontWeight: 400 }}>Sorry listing {this.props.match.params.id} was not found.</h3> );
-        } 
+            content = ( <h3 className="error" style={{color: 'red', textAlign: 'center', fontWeight: 400 }}>Sorry listing {this.props.match.params.id} was not found.</h3> );
+        } else {
+            content = ( <ListingDetail {...this.props.listing}></ListingDetail> );
+        }
          
         return (
             <div className={`listing-detail-page`}>
