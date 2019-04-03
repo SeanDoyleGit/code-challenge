@@ -28,3 +28,52 @@
 .listing-detail__thumbnail {
     display: none;
 }
+
+@media only screen and (max-width: 1480px) {
+    .listing-detail__wrapper, .listing-detail__image-wrapper {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .listing-detail__image-wrapper {
+        width: auto;
+    }
+    
+    .listing-detail__thumbnail {
+        display: block;
+        width: 100%;
+    }
+    .listing-detail__image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .listing-detail__title {
+        font-size: 32px;
+        margin-top: 30px; 
+    }
+    
+    .listing-detail__question__number {
+        font-size: 24px;
+    }
+    
+    .listing-detail__question__text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .listing-detail__title {
+        font-size: 24px;
+        margin-top: 20px; 
+    }
+    
+    .listing-detail__question__number {
+        font-size: 20px;
+    }
+    
+    .listing-detail__question__text {
+        font-size: 14px;
+    }
+}

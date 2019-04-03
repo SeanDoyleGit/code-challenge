@@ -4,3 +4,17 @@
     padding-bottom: 100px;
     display: flex;
 }
+
+@media only screen and (max-width: 1480px) {
+    .listing-detail {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .listing-detail {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
