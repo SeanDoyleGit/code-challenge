@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Transition } from 'react-transition-group';
 import * as selectors from '../../store/selectors';
 import * as actions from '../../store/actions/listings';
 
@@ -13,14 +14,18 @@ class ListingsPage extends Component {
     }
 
     render() {
-        let listings = this.props.listings.map((listing) => {
-            return <Listing key={listing.id} {...listing} /> 
+        let listings = this.props.listings.map((listing, index) => {
+            return <Listing  transitionDelay={1000 + index * 500} key={listing.id} {...listing} /> 
         });
 
         return (
-            <div className="listings-page">
-                {listings}
-            </div>
+            <Transition in timeout={1000}>
+                {state => (
+                    <div className={`listings-page listing-page-${state}`}>
+                        {listings}
+                    </div>
+                )}
+            </Transition>
         );
     }
 }

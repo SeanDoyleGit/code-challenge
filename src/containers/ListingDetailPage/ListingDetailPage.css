@@ -1,9 +1,16 @@
-.listing-detail {
+.listing-detail-page {
     box-sizing: border-box;
-    padding-top: 60px;
-    padding-bottom: 100px;
-    display: flex;
+    width: 100%;
 }
+
+.listing-detail-page.fade-enter {
+    display: none;
+}
+
+.listing-detail-page.fade-enter-done {
+    display: block;
+}
+
 
 @media only screen and (max-width: 1480px) {
     .listing-detail {

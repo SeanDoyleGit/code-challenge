@@ -2,14 +2,23 @@
     box-sizing: border-box;
     padding-top: 60px;
     min-height: 100%;
+    width: 100%;
     display: flex;
   
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
 }
 
+.listings-page.fade-enter {
+    display: none;
+}
+
+.listings-page.fade-enter-active {
+    
+}
+
 @media only screen and (max-width: 620px) {
-    .listings-page {
+    .listings-page.fade-enter-done {
         display: block;
         padding-top: 20px;
     }

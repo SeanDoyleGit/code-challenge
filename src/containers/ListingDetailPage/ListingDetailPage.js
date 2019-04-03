@@ -13,17 +13,16 @@ class ListingDetailPage extends Component {
     }
 
     render() {
+        let content = ( <ListingDetail {...this.props.listing}></ListingDetail> );
         if(!this.props.listing) {
-            return ( 
-                <div className="listing-detail">
-                    <h3 style={{color: 'red', textAlign: 'center', fontWeight: 400 }}>Sorry listing {this.props.match.params.id} was not found.</h3>
-                </div>
-            );
-        } else {
-            return (
-                <ListingDetail {...this.props.listing}></ListingDetail>
-            );
-        }
+            content = ( <h3 style={{color: 'red', textAlign: 'center', fontWeight: 400 }}>Sorry listing {this.props.match.params.id} was not found.</h3> );
+        } 
+         
+        return (
+            <div className={`listing-detail-page`}>
+                {content}
+            </div>
+        );
     }
 }
 
